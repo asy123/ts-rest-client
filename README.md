@@ -32,7 +32,7 @@
     type TRouter = Router<IResponse, TStatusCodes>;
     type TResponse = SuccessResponse<IResponse>;
 
-    const client = RestClient("client name", https://your/api/url_base)
+    const client = RestClient("client name", "https://your/api/url_base")
     
     // In your async func
     const router: TRouter = await client.get<IResponse, TStatusCodes>("/your/api/path", StatusCodes);
